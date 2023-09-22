@@ -26,7 +26,7 @@ pip3 install bs4 && pip3 install selenium
 
 ```shell
 cd path_to_the_repository_on_your_device
-python canceller.py
+python3 canceller.py
 ```
 
 6. Enjoy an account free of pending follow requests
