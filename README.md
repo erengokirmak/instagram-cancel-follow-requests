@@ -12,27 +12,12 @@ If there is a way to convert an Instagram account's account link to their Instag
 
 ## Usage
 
-1. Clone or download this repository
-2. Copy the path of the pending_follow_requests.html on your device (typically of the form "C:\ ...")
-3. Enter your account's credentials, along with the path you copied in step 2, to their respective fields in [credential.py](credentials.py)
-4. Make sure you have python3 installed on your computer. You can find more information on the [official Python website](https://www.python.org/).
-5. Make sure your python installation has BeautifulSoup and Selenium. If you're unsure, you can install them using the command:
+This program used to be a cli-application. Now, using tkinter, it is a GUI program so the instructions are much easier to follow:
 
-```shell
-pip3 install bs4 && pip3 install selenium
-```
+0. From the [Releases](releases) page, download InstagramPendingFollowRequestCanceller.exe
+1. Enter your username and password
+2. Click on the 'Pending Requests File' button and select your "pending_follow_requests.html" file.
+3. Click 'Get Rid Of Pending Requests!' and wait for the procedure to end (a chrome tab will open and automatically log in to your account and cancel all your pending follow requests).
+4. Enjoy an account free of pending follow requests!
 
-5. Run canceller.py either by using an IDE such as VSCode or directly from the command prompt with the command:
-
-```shell
-cd path_to_the_repository_on_your_device
-python3 canceller.py
-```
-
-6. Enjoy an account free of pending follow requests
-
-Note that step 5 can take quite a long time depending on the number of follow requests you have.
-
-## Potential problems
-
-Currenly, the program assumes that the login page will load in a maximum time of 6 seconds and any profile page will fully load in a maximum duration of 1.5 seconds. This can be modified in the [canceller](canceller.py) file if needed.
+Note that step 3 can take quite a long time depending on the number of follow requests you have.
