@@ -15,11 +15,11 @@ If there is a way to convert an Instagram account's account link to their Instag
 1. Clone or download this repository
 2. Copy the path of the pending_follow_requests.html on your device (typically of the form "C:\ ...")
 3. Enter your account's credentials, along with the path you copied in step 2, to their respective fields in [credential.py](credentials.py)
-4. Make sure your python installation has BeautifulSoup and Selenium. If you're unsure, you can install them using these commands:
+4. Make sure you have python3 installed on your computer. You can find more information on the [official Python website](https://www.python.org/).
+5. Make sure your python installation has BeautifulSoup and Selenium. If you're unsure, you can install them using the command:
 
 ```shell
-pip3 install bs4
-pip3 install selenium
+pip3 install bs4 && pip3 install selenium
 ```
 
 5. Run canceller.py either by using an IDE such as VSCode or directly from the command prompt with the command:
@@ -35,4 +35,4 @@ Note that step 5 can take quite a long time depending on the number of follow re
 
 ## Potential problems
 
-Currenly, the program assumes that the login page and any profile page will fully load in a maximum duration of 3 seconds. This can be modified in the [canceller](canceller.py) file if needed.
+Currenly, the program assumes that the login page will load in a maximum time of 6 seconds and any profile page will fully load in a maximum duration of 1.5 seconds. This can be modified in the [canceller](canceller.py) file if needed.

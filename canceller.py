@@ -52,15 +52,16 @@ time.sleep(6)
 ## unfollowing profiles ##
 for link in links:
     driver.get(link)  # get the profile
-    time.sleep(2)  # wait for page to load
+    time.sleep(1.5)  # wait for page to load
 
-    # click 'unfollow' (the weird class name is because of Instagram's css code obfuscation/minimization)
     try:
-        driver.find_element(By.CLASS_NAME, "_acan _acap _acat _aj1-").click()
-        time.sleep(1)  # wait for request to be sent
+        # click 'unfollow' (the XPATH to the unfollow button)
+        driver.find_element(By.XPATH, "./html/body/div[2]/div/div/div[2]/div/div/div/div[1]/div[1]/div[2]/div[2]/section/main/div/header/section/div[1]/div[1]/div/div/button").click()
+        # confirm 'unfollow' (again, the XPATH to the unfollow button)
+        driver.find_element(By.XPATH, "/html/body/div[5]/div[1]/div/div[2]/div/div/div/div/div/div/button[1]").click()
+        time.sleep(1) # wait for the request to be confirmed
     except:
         print('There was a problem finding the \'unfollow\' button')
-
 
 # exit
 driver.quit()
