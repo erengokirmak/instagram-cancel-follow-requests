@@ -14,7 +14,7 @@ If there is a way to convert an Instagram account's account link to their Instag
 
 This program used to be a cli-application. Now, using tkinter, it is a GUI program so the instructions are much easier to follow:
 
-0. From the [Releases](releases) page, download InstagramPendingFollowRequestCanceller.exe
+0. From the [Releases](https://github.com/erengokirmak/instagram-cancel-follow-requests/releases/) page, download InstagramPendingFollowRequestCanceller.exe
 1. Enter your username and password
 2. Click on the 'Pending Requests File' button and select your "pending_follow_requests.html" file.
 3. Click 'Get Rid Of Pending Requests!' and wait for the procedure to end (a chrome tab will open and automatically log in to your account and cancel all your pending follow requests).
